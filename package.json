@@ -1,6 +1,6 @@
 {
   "name": "datagun",
-  "version": "1.0.4",
+  "version": "1.0.5",
   "description": "a lighthearted tiny solution to all your event emitting/receiving problems",
   "main": "dataGun.mjs",
   "repository": {
@@ -12,7 +12,8 @@
     "emitter",
     "emit",
     "pewpew",
-    "dataGun"
+    "dataGun",
+    "es6-module"
   ],
   "author": "Saul van der Walt",
   "license": "MIT"

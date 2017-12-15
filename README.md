@@ -36,6 +36,10 @@ setTimeout(listener.stop, 60000 * 2)
 * stop listening - ``listener.stop()``
 
 #### Extra
+
+* ``dataGun().listeners`` is a listMap
+You can check or manipulate listeners via it.
+
 listMap - ``dataGun.listMap() -> {del, has, each}``
 
 **listMap** is just a utility to manage a ``Map`` that contains ``Set``s
