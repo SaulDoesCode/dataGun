@@ -4,7 +4,7 @@ all in less than 38 lines of code
 ## Usage
 
 ```javascript
-import dataGun from 'dataGun.js'
+import dataGun from 'dataGun.mjs'
 
 const gun = dataGun()
 
@@ -40,7 +40,7 @@ listMap - ``dataGun.listMap() -> {del, has, each}``
 
 **listMap** is just a utility to manage a ``Map`` that contains ``Set``s
 ```javascript
-  import dataGun from 'dataGun.js'
+  import dataGun from 'dataGun.mjs'
   const lm = dataGun.listMap()
 
   // set
@@ -66,5 +66,9 @@ listMap - ``dataGun.listMap() -> {del, has, each}``
   // value1
   // ...
 ```
+
+#### NOTE: dataGun uses ES6 Modules
+you might have to run node with
+``--experimental-modules``
 
 ##### MIT license
