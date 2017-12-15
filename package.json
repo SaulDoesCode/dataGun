@@ -1,5 +1,5 @@
 {
-  "name": "dataGun",
+  "name": "datagun",
   "version": "1.0.0",
   "description": "a lighthearted tiny solution to all your event emitting/receiving problems",
   "main": "dataGun.js",
