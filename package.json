@@ -1,5 +1,5 @@
 {
-  "name": "infoGun",
+  "name": "dataGun",
   "version": "1.0.0",
   "description": "a lighthearted tiny solution to all your event emitting/receiving problems",
   "main": "dataGun.js",
@@ -12,7 +12,7 @@
     "emitter",
     "emit",
     "pewpew",
-    "infoGun"
+    "dataGun"
   ],
   "author": "Saul van der Walt",
   "license": "MIT"
