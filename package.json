@@ -1,0 +1,14 @@
+{
+  "name": "infoGun",
+  "version": "1.0.0",
+  "description": "a lighthearted minuscule event emitter",
+  "main": "dataGun.js",
+  "keywords": [
+    "event",
+    "emitter",
+    "pewpew",
+    "infoGun"
+  ],
+  "author": "Saul van der Walt",
+  "license": "MIT"
+}
