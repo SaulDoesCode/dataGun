@@ -8,7 +8,7 @@ const listMap = (map = new Map()) => Object.assign(
     },
     has (key, val) {
       const list = map.get(key)
-      return !!list && def(val) && list.has(val)
+      return def(val) ? list && list.has(val) : !!list
     },
     each (key, fn) { map.has(key) && map.get(key).forEach(fn) }
   }
