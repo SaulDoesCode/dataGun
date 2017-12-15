@@ -16,20 +16,19 @@ const listMap = (map = new Map()) => Object.assign(
   }
 )
 
-export default Object.assign(
-  (listeners = listMap()) => Object.assign((evt, fn, one) => {
-    fn._one = one
-    fn.stop = () => listeners.del(evt, fn)
-    listeners(evt, fn)
-    return fn
-  }, {
-    del: listeners.del,
-    fire (evt, ...data) {
-      listeners.each(evt, h => {
-        setTimeout(() => h(...data), 0)
-        h._one && h.stop()
-      })
-    }
-  }),
-  {listMap}
-)
+const dataGun = (listeners = listMap()) => Object.assign((evt, fn, one) => {
+  fn._one = one
+  fn.stop = () => listeners.del(evt, fn)
+  listeners(evt, fn)
+  return fn
+}, {
+  del: listeners.del,
+  fire (evt, ...data) {
+    listeners.each(evt, h => {
+      setTimeout(() => h(...data), 0)
+      h._one && h.stop()
+    })
+  }
+})
+dataGun.listMap = listMap
+export default dataGun
