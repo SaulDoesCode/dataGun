@@ -4,7 +4,7 @@ all in less than 38 lines of code
 ## Usage
 
 ```javascript
-import dataGun from 'dataGun.mjs'
+import dataGun from 'datagun'
 
 const gun = dataGun()
 
@@ -67,7 +67,7 @@ listMap - ``dataGun.listMap() -> {del, has, each}``
   // ...
 ```
 
-#### NOTE: dataGun uses ES6 Modules
+#### NOTE: datagun uses ES6 Modules
 you might have to run node with
 ``--experimental-modules``
 

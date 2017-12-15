@@ -12,9 +12,7 @@ const listMap = (map = new Map()) => Object.assign(
       const exists = map.has(key)
       return def(val) ? exists && map.get(key).has(val) : exists
     },
-    each (key, fn) {
-      map.has(key) && map.get(key).forEach(fn)
-    }
+    each (key, fn) { map.has(key) && map.get(key).forEach(fn) }
   }
 )
 
