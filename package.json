@@ -2,7 +2,7 @@
   "name": "datagun",
   "version": "1.0.1",
   "description": "a lighthearted tiny solution to all your event emitting/receiving problems",
-  "main": "dataGun.js",
+  "main": "dataGun.mjs",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/SaulDoesCode/dataGun.git"
