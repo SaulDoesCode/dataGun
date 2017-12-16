@@ -58,7 +58,7 @@ listMap - ``dataGun.listMap() -> {del, has, each}``
   lm.has('key') // -> true
   lm.has('key', 'value2') // -> false
   // delete a value
-  lm.delete('key', 'value0')
+  lm.del('key', 'value0')
   // or
   lm('key').delete('value0')
 
@@ -72,7 +72,6 @@ listMap - ``dataGun.listMap() -> {del, has, each}``
 ```
 
 #### NOTE: datagun uses ES6 Modules
-you might have to run node with
-``--experimental-modules``
-
+you might have to run node with ``--experimental-modules``
+And no dependencies so no fuss!
 ##### MIT license

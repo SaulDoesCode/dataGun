@@ -1,6 +1,6 @@
 {
   "name": "datagun",
-  "version": "1.0.6",
+  "version": "1.0.7",
   "description": "a lighthearted tiny solution to all your event emitting/receiving problems",
   "main": "dataGun.mjs",
   "repository": {
