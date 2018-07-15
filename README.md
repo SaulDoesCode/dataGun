@@ -71,7 +71,7 @@ listMap - ``dataGun.listMap() -> {del, has, each}``
   // ...
 ```
 
-#### NOTE: datagun uses ES6 Modules
+#### NOTE: datagun uses ES6 Modules  
 you might have to run node with ``--experimental-modules``
 And no dependencies so no fuss!
 ##### MIT license          
@@ -79,7 +79,7 @@ And no dependencies so no fuss!
 #### The Source:     
       
 ```javascript
-const callAsync = this.requestIdleCallback || this.requestIdleCallback || this.setImmediate || setTimeout
+const callAsync = this.requestIdleCallback || this.setImmediate || setTimeout
 const dataGun = (listeners = dataGun.listMap()) => Object.assign((evt, fn, one) => {
   fn._one = one
   fn.stop = listeners.del.bind(null, evt, fn)

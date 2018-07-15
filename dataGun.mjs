@@ -1,4 +1,4 @@
-const callAsync = this.requestIdleCallback || this.requestIdleCallback || this.setImmediate || setTimeout
+const callAsync = this.requestIdleCallback || this.setImmediate || setTimeout
 const dataGun = (listeners = dataGun.listMap()) => Object.assign((evt, fn, one) => {
   fn._one = one
   fn.stop = listeners.del.bind(null, evt, fn)
