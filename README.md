@@ -1,5 +1,5 @@
 # dataGun - a lighthearted tiny solution to all your event emitting/receiving problems
-all in less than 38 lines of code    
+all in less than 24 lines of code    
 
 ## Usage
 
@@ -33,7 +33,7 @@ setTimeout(listener.stop, 60000 * 2)
 
 * emit - ``(dataGun() -> emitter).fire( eventName, ...data)``
 * listen - ``(dataGun() -> emitter)(eventName, func, =runOnce) -> listener``
-* stop listening - ``listener.stop()``
+* stop listening - ``listener.stop()`` or ``emitter.listeners.del(eventName, func)``
 
 #### Extra
 
